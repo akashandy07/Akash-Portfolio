@@ -28,7 +28,7 @@
     color: #A6C8FF;
     font-size: 28px;
     font-weight: 700;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     letter-spacing: 1px;
 }
 
@@ -75,7 +75,7 @@
 }
 
 .contact-info button {
-    margin-top: 10px;
+    padding-top: 10px;
     padding: 14px;
     background: linear-gradient(135deg, #5227FF, #FF9FFC);
     border: none;

@@ -40,7 +40,7 @@ const skills = [
 const AboutPage = () => {
   return (
     <div className='btneeee'>
-      <div style={{ width: '100%', height: '100vh', position: 'absolute', overflow: 'hidden', top: '0px', left: '0px', zIndex: 0 }}>
+      <div style={{ width: '100%', height: '100vh', position: 'absolute', overflow: 'visible', top: '0px', left: '0px', zIndex: 0 }}>
 
         <Lightfall
           colors={['#000000', '#0c0631', '#3a1539']}
@@ -83,7 +83,7 @@ const AboutPage = () => {
             <GlowHeading text="Crafting interfaces that feel alive" />
           </div>
 
-        
+
 
           <div className='info-two'>
             <p>I'm Akash A, an M.Sc. Computer Science student,at Sri Krishna
@@ -95,7 +95,7 @@ const AboutPage = () => {
           </div>
 
           {/* ── skills ── */}
-          <div className='skills-label'><GlowHeading text="skills"/></div>
+          <div className='skills-label'><GlowHeading text="skills" /></div>
           <div className='info-three'>
             {skills.map((skill, i) => (
               <BorderGlow

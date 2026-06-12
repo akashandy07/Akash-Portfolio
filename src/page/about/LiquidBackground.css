@@ -3,14 +3,14 @@
 /* ── Base Container ── */
 .btneeee {
   width: 100%;
+  height: 100%;
   min-height: 100vh;
   position: relative;
-  overflow: visible;
+  margin: 0px auto;
+  overflow: hidden;
   scroll-behavior: smooth;
   display: flex;
-  /* ✅ Add this */
   flex-direction: column;
-  /* ✅ Add this */
 }
 
 /* ── Main Layout Container ── */
@@ -19,8 +19,9 @@
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
+  /* ✅ ADDED: needed for absolute children to position correctly */
   display: flex;
-  gap: 60px;
+  gap: 67px;
   align-items: center;
   z-index: 2;
 }
@@ -32,11 +33,13 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  /* ✅ ADDED: parent of .photo-wrapper which has absolute pseudo-elements */
   z-index: 2;
 }
 
 .photo-wrapper {
   position: relative;
+  /* ✅ CRITICAL: needed for ::before, ::after, and .photo-glow to position */
   width: 300px;
   object-fit: cover;
   zoom: 1.2;
@@ -113,12 +116,13 @@
 
 /* ── About Info Box ── */
 .about-info {
-  flex: 1;
-  width: 100%;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
   color: rgba(255, 255, 255, 0.75);
   padding: 40px 44px;
   position: relative;
+  /* ✅ ADDED: establishes stacking context for child elements */
+  margin: 0px auto;
   border-radius: 5px;
   z-index: 3;
 }
@@ -126,7 +130,7 @@
 /* ── Text Sections ── */
 .into-one {
   padding-top: 15px;
-  margin-bottom: 24px;
+  padding-bottom: 24px;
 }
 
 .into-one h4 {
@@ -134,7 +138,7 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #7c3aed;
-  margin-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 /* ── Glow Heading ── */
@@ -143,6 +147,7 @@
   font-weight: 700;
   line-height: 1.3;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 2px;
 }
@@ -170,8 +175,9 @@
 
 /* ── Skills Label ── */
 .skills-label {
-  margin-bottom: 12px;
+  padding-bottom: 12px;
   position: relative;
+  /* ✅ ADDED: good practice for predictable content stacking */
   z-index: 2;
 }
 
@@ -197,14 +203,16 @@
 
 /* ── Info Two ── */
 .info-two {
-  margin-bottom: 50px;
+  padding-bottom: 30px;
+  position: relative;
+  /* ✅ ADDED: establishes stacking context */
 }
 
 .info-two p {
   font-size: 14px;
   line-height: 2;
   color: rgba(255, 255, 255, 0.75);
-  margin-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 /* ── Divider ── */
@@ -236,15 +244,21 @@
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+  position: relative;
+  /* ✅ ADDED: establishes stacking context for skill cards */
 }
 
 .info-three>* {
   flex: 0 0 auto;
+  position: relative;
+  /* ✅ ADDED: ensures skill cards have proper positioning context */
 }
 
 .skill-card {
-  padding: 0.5em 1em;
+  padding: 0.3em 1em;
   text-align: center;
+  position: relative;
+  /* ✅ ADDED: parent of .skill-name if any absolute positioning is needed */
 }
 
 .skill-name {
@@ -259,7 +273,7 @@
 }
 
 /* ── Responsive ── */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .container-about {
     gap: 40px;
     padding: 80px 2rem;
@@ -293,7 +307,6 @@
 
   .about-info {
     padding: 30px 20px;
-    height: 100vh;
   
   }
 
@@ -312,7 +325,9 @@
 
 @media (max-width: 480px) {
   .btneeee {
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
   }
 
   .container-about {
@@ -331,5 +346,136 @@
   .about-info {
     height: 100vh;
     padding: 20px 15px;
+  }
+} */
+
+
+/* ===========================
+   Tablet (992px and below)
+=========================== */
+@media (max-width: 992px) {
+  .container-about {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+
+  .photo {
+    flex: unset;
+  }
+
+  .photo-wrapper {
+    width: 260px;
+    height: 260px;
+    zoom: 1;
+  }
+
+  .about-info {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .info-two p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .info-three {
+    justify-content: center;
+  }
+
+  .glow-heading {
+    justify-content: center;
+    font-size: 24px;
+  }
+}
+
+
+/* ===========================
+   Mobile (768px and below)
+=========================== */
+@media (max-width: 768px) {
+  .btneeee {
+    min-height: auto;
+    padding: 30px 0;
+  }
+
+  .container-about {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .photo-wrapper {
+    width: 220px;
+    height: 220px;
+  }
+
+  .about-info {
+    padding: 10px;
+    height: auto;
+  }
+
+  .into-one h4 {
+    font-size: 11px;
+  }
+
+  .glow-heading {
+    font-size: 22px;
+    line-height: 1.4;
+    justify-content: center;
+  }
+
+  .info-two p {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: center;
+  }
+
+  .info-three {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .skill-card {
+    padding: 6px 12px;
+  }
+
+  .skill-name {
+    font-size: 13px;
+  }
+}
+
+
+/* ===========================
+   Small Mobile (480px and below)
+=========================== */
+@media (max-width: 480px) {
+  .container-about {
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .photo-wrapper {
+    width: 180px;
+    height: 180px;
+  }
+
+  .glow-heading {
+    font-size: 18px;
+  }
+
+  .info-two p {
+    font-size: 13px;
+  }
+
+  .skill-name {
+    font-size: 12px;
+  }
+
+  .about-info {
+    padding: 5px;
   }
 }

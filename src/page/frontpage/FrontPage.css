@@ -1,19 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap');
 
 .frontpage {
-  position: relative;
-  margin: 0px auto;
   width: 100%;
   z-index: 100;
-  padding: 27vh 6% 10vh;
   scroll-behavior: smooth;
+  padding-top: 13%;
+  position: relative;
+  margin: 0px auto;
 }
 
 .frontpage-content {
+  position: relative;
+  margin: 0px auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 1300px;
+  width: 100%;
+  max-width: 1200px;
+
 }
 
 .frontpage-content span {
@@ -119,7 +123,7 @@
 @media (max-width: 480px) {
   .frontpage {
     padding: 22vh 1.5rem 4vh;
-    
+
   }
 
   .frontpage-content {
@@ -137,7 +141,8 @@
   }
 
   .frontpage-content h1 br {
-    display: none;       /* remove manual line breaks on mobile */
+    display: none;
+    /* remove manual line breaks on mobile */
   }
 
   .frontpage-content .buttons {

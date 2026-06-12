@@ -7,11 +7,12 @@ const ProjectPage = () => {
         <div className='project-container'>
 
             {/* ── Background ── */}
-            <div className='project-bg'>
+            <div style={{ width: '100%', height: '100%', position: 'absolute', overflow: 'hidden', top: '0px', left: '0px', zIndex: 0 }}>
+
                 <Lightfall
-                    colors={['#000000', '#0c0631', '#552c54']}
+                    colors={['#000000', '#0c0631', '#3a1539']}
                     backgroundColor="#02051a"
-                    speed={2}
+                    speed={0.5}
                     streakCount={2}
                     streakWidth={1}
                     streakLength={1}
@@ -19,14 +20,15 @@ const ProjectPage = () => {
                     density={0.6}
                     twinkle={1}
                     zoom={2}
-                    backgroundGlow={0.1}
+                    backgroundGlow={0.5}
                     opacity={1}
                     mouseInteraction
-                    mouseStrength={0.1}
+                    mouseStrength={0.5}
                     mouseRadius={1}
-                    color1="#1e1f20"
-                    color2="#090324c4"
-                    color3="#b11111"
+                    color1="#A6C8FF"
+                    color2="#5227FF"
+                    color3="#FF9FFC"
+
                 />
             </div>
 
