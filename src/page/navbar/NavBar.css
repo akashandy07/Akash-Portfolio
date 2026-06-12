@@ -113,7 +113,7 @@ header {
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
-    z-index: 300;
+    z-index: 1000;
 }
 
 .hamburger span {
@@ -199,10 +199,12 @@ header {
 
     .hamburger {
         display: flex;
+        z-index: 20000;
     }
 
     .mobile-menu {
         display: flex;
+         z-index: 20000;
     }
 }
 
