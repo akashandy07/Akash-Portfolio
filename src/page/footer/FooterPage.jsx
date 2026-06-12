@@ -48,7 +48,7 @@ const FooterPage = ({ onHome, onAbout, onProject, onContact }) => {
                 </footer>
                 <div className='footer-bottom'>
 
-                    © 2024 AKASH. All rights reserved.
+                    © 2024 AKASH.A  All rights reserved.
                 </div>
 
 
