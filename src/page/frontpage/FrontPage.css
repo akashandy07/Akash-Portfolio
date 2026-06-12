@@ -95,7 +95,7 @@
 /* ── Small Tablet (768px and below) ── */
 @media (max-width: 768px) {
   .frontpage {
-    padding: 28vh 4% 6vh;
+    padding: 34vh 4% 3vh;
   }
 
   .frontpage-content span {
@@ -136,7 +136,7 @@
 
   .frontpage-content h1 {
     font-size: 13px;
-    padding-top: 10px;
+    padding-top: 20px;
     line-height: 1.7;
   }
 

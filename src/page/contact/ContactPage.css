@@ -107,7 +107,7 @@
 /* ── Small Tablet (768px and below) ── */
 @media (max-width: 768px) {
     .contact-container {
-        padding: 40px 1.5rem;
+        padding: 70px 1.5rem;
         align-items: flex-start;
     }
 
@@ -136,7 +136,8 @@
 /* ── Mobile (480px and below) ── */
 @media (max-width: 490px) {
     .contact-container {
-        padding: 90px 2px 0px;
+       padding-top: 110px;
+       align-items: flex-start;
     }
 
     .contact-info {
@@ -144,6 +145,7 @@
         padding: 24px 20px;
         gap: 14px;
         border-radius: 14px;
+
     }
 
     .contact-info h1 {
