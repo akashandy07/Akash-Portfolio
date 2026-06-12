@@ -118,7 +118,8 @@
 /* ── Mobile (480px and below) ── */
 @media (max-width: 480px) {
   .frontpage {
-    padding: 10vh 1.5rem 8vh;
+    padding: 20h 1.5rem 8vh;
+    align-items: center;
   }
 
   .frontpage-content {
@@ -141,7 +142,7 @@
 
   .frontpage-content .buttons {
     flex-direction: column;
-    gap: 10px;
+    gap: 17px;
     width: 100%;
   }
 

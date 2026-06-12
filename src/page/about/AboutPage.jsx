@@ -83,7 +83,7 @@ const AboutPage = () => {
             <GlowHeading text="Crafting interfaces that feel alive" />
           </div>
 
-          <div className='about-divider' />
+        
 
           <div className='info-two'>
             <p>I'm Akash A, an M.Sc. Computer Science student,at Sri Krishna

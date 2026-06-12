@@ -204,7 +204,8 @@ header {
 
     .mobile-menu {
         display: flex;
-         z-index: 20000;
+        z-index: 20000;
+        margin-top: 2px;
     }
 }
 

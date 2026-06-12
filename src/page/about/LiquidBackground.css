@@ -89,8 +89,13 @@
 }
 
 @keyframes photo-border-spin {
-  from { --photo-angle: 0deg; }
-  to   { --photo-angle: 360deg; }
+  from {
+    --photo-angle: 0deg;
+  }
+
+  to {
+    --photo-angle: 360deg;
+  }
 }
 
 .photo-wrapper img {
@@ -139,7 +144,8 @@
 
 .glow-letter {
   display: inline-block;
-  color: #ffffff;              /* ✅ default white */
+  color: #ffffff;
+  /* ✅ default white */
   transition: color 0.3s, text-shadow 0.3s;
   cursor: default;
 }
@@ -172,7 +178,8 @@
 }
 
 .skills-label .glow-letter {
-  color: #7c3aed;              /* ✅ purple for skills heading */
+  color: #7c3aed;
+  /* ✅ purple for skills heading */
 }
 
 .skills-label .glow-letter:hover {
@@ -206,8 +213,17 @@
 }
 
 @keyframes shimmer {
-  0%, 100% { opacity: 1; width: 60px; }
-  50%       { opacity: 0.6; width: 100px; }
+
+  0%,
+  100% {
+    opacity: 1;
+    width: 60px;
+  }
+
+  50% {
+    opacity: 0.6;
+    width: 100px;
+  }
 }
 
 /* ── Skills Grid ── */
@@ -217,7 +233,7 @@
   flex-wrap: wrap;
 }
 
-.info-three > * {
+.info-three>* {
   flex: 0 0 auto;
 }
 
@@ -243,8 +259,15 @@
     gap: 40px;
     padding: 80px 2rem;
   }
-  .photo { flex: 0 0 280px; }
-  .photo-wrapper { width: 280px; height: 280px; }
+
+  .photo {
+    flex: 0 0 280px;
+  }
+
+  .photo-wrapper {
+    width: 280px;
+    height: 280px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -253,17 +276,52 @@
     gap: 40px;
     padding: 60px 1.5rem;
   }
-  .photo { flex: 0 0 auto; }
-  .photo-wrapper { width: 240px; height: 240px; }
-  .about-info { padding: 30px 20px; }
-  .glow-heading { font-size: 24px; }
-  .info-two p { font-size: 12px; }
-  .info-three > * { max-width: 100%; }
+
+  .photo {
+    flex: 0 0 auto;
+  }
+
+  .photo-wrapper {
+    width: 240px;
+    height: 240px;
+  }
+
+  .about-info {
+    padding: 30px 20px;
+  }
+
+  .glow-heading {
+    font-size: 24px;
+  }
+
+  .info-two p {
+    font-size: 12px;
+  }
+
+  .info-three>* {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
-  .container-about { padding: 40px 1rem; }
-  .photo-wrapper { width: 200px; height: 200px; }
-  .glow-heading { font-size: 20px; }
-  .about-info { padding: 20px 15px; }
+  .btneeee {
+    height: 100%;
+  }
+
+  .container-about {
+    padding: 40px 1rem;
+  }
+
+  .photo-wrapper {
+    width: 200px;
+    height: 200px;
+  }
+
+  .glow-heading {
+    font-size: 20px;
+  }
+
+  .about-info {
+    padding: 20px 15px;
+  }
 }
