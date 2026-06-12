@@ -18,7 +18,9 @@ const ContactPage = () => {
 
     const submitdata = (e) => {
         e.preventDefault()
+        alert("We have Received a Form")
         console.log(data)
+
 
 
     }
@@ -105,7 +107,7 @@ const ContactPage = () => {
             </div>
 
         </div>
-        
+
 
 
     )
