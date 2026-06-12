@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Renderer, Program, Mesh, Triangle } from 'ogl';
-import './Lightpillar.css'
+import './LightPillar.css'
 
 const MAX_COLORS = 8;
 
