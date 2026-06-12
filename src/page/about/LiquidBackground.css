@@ -398,7 +398,7 @@
 =========================== */
 @media (max-width: 768px) {
   .btneeee {
-    
+    min-height: auto;
     padding: 30px 0;
   }
 
