@@ -118,11 +118,11 @@
 /* ── Mobile (480px and below) ── */
 @media (max-width: 480px) {
   .frontpage {
-    padding: 18vh 1.5rem 8vh;
+    padding: 10vh 1.5rem 8vh;
   }
 
   .frontpage-content {
-    gap: 14px;
+    gap: 23px;
   }
 
   .frontpage-content span {
