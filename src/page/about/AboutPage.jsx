@@ -71,7 +71,7 @@ const AboutPage = () => {
         <div className='photo'>
           <div className='photo-wrapper'>
             <div className='photo-glow' />
-            <img src="/akash.jpeg" alt="Akash R" />
+            <img src="/akash.jpeg" alt="Akash A" />
           </div>
         </div>
 
@@ -90,12 +90,12 @@ const AboutPage = () => {
               Arts and Science College, Coimbatore.
               I love turning ideas into pixel-perfect, responsive web interfaces.</p>
             <p>Currently completing a Frontend Developer Internship at Next Skills,
-              Coimbatore — working on real-world projects involving React.js, Vite, Axios, and
-              API integrations including TMDB OAuth-style authentication.</p>
+              Coimbatore, working with React.js, Vite, Axios, API integrations,
+              Prompt Engineering, and AI-integrated frontend applications.</p>
           </div>
 
           {/* ── skills ── */}
-          <div className='skills-label'><GlowHeading text="skills"/></div>
+          <div className='skills-label'><GlowHeading text="skills" /></div>
           <div className='info-three'>
             {skills.map((skill, i) => (
               <BorderGlow
