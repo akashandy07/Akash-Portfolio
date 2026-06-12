@@ -2,6 +2,7 @@ import React from 'react'
 import './FooterPage.css'
 import Lightfall from '../navbar/LightPillar'
 
+
 const FooterPage = ({ onHome, onAbout, onProject, onContact }) => {
 
 
