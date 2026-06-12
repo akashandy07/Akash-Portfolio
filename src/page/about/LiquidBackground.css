@@ -398,8 +398,8 @@
 =========================== */
 @media (max-width: 768px) {
   .btneeee {
-    min-height: auto;
-    padding: 30px 0;
+    height: 100%;
+    padding: 60px 0;
   }
 
   .container-about {
@@ -454,7 +454,7 @@
 =========================== */
 @media (max-width: 480px) {
   .container-about {
-    min-height: auto;
+    height: 100%;
     padding: 15px;
     gap: 20px;
   }
