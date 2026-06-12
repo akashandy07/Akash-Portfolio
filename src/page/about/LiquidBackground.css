@@ -7,6 +7,10 @@
   position: relative;
   overflow: visible;
   scroll-behavior: smooth;
+  display: flex;
+  /* ✅ Add this */
+  flex-direction: column;
+  /* ✅ Add this */
 }
 
 /* ── Main Layout Container ── */
