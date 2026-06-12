@@ -136,8 +136,8 @@
 
   .frontpage-content h1 {
     font-size: 13px;
-    padding-top: 40px;
-    line-height: 1.7;
+    padding-top: 60px;
+    line-height: 1.8;
   }
 
   .frontpage-content h1 br {
@@ -153,7 +153,7 @@
 
   .frontpage-content button {
     font-size: 12px;
-    padding: 15px 20px;
+    padding: 17px 20px;
     width: 100%;
     text-align: center;
   }
