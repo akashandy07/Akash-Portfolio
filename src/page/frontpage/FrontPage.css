@@ -95,7 +95,7 @@
 /* ── Small Tablet (768px and below) ── */
 @media (max-width: 768px) {
   .frontpage {
-    padding: 28vh 4% 8vh;
+    padding: 28vh 4% 6vh;
   }
 
   .frontpage-content span {
@@ -120,9 +120,9 @@
 }
 
 /* ── Mobile (480px and below) ── */
-@media (max-width: 480px) {
+@media (max-width: 490px) {
   .frontpage {
-    padding: 16vh 1.5rem 4vh;
+    padding: 16vh 1.5rem 2vh;
 
   }
 

@@ -134,9 +134,9 @@
 }
 
 /* ── Mobile (480px and below) ── */
-@media (max-width: 480px) {
+@media (max-width: 490px) {
     .contact-container {
-        padding: 70px 1rem;
+        padding: 90px 2px 0px;
     }
 
     .contact-info {

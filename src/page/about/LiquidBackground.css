@@ -454,7 +454,7 @@
 /* ===========================
    Small Mobile (480px and below)
 =========================== */
-@media (max-width: 480px) {
+@media (max-width: 490px) {
   .container-about {
     min-height: auto;
     padding: 20px 0px;
