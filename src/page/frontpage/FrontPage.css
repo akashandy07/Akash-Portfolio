@@ -127,7 +127,7 @@
   }
 
   .frontpage-content {
-    gap: 25px;
+    gap: 35px;
   }
 
   .frontpage-content span {
@@ -136,7 +136,7 @@
 
   .frontpage-content h1 {
     font-size: 13px;
-    padding-top: 60px;
+    padding-top: 80px;
     line-height: 1.8;
   }
 
