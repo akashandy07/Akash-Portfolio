@@ -398,8 +398,10 @@
 =========================== */
 @media (max-width: 768px) {
   .btneeee {
-    min-height: 100vh;
+    min-height: auto;
+    height: auto;
     padding: 30px 0;
+    overflow: visible;
   }
 
   .container-about {
@@ -415,7 +417,7 @@
 
   .about-info {
     padding: 6px;
-    min-height: 100vh;
+    min-height: auto;
   }
 
   .into-one h4 {
@@ -454,7 +456,7 @@
 =========================== */
 @media (max-width: 480px) {
   .container-about {
-    min-height: 100vh;
+    min-height: auto;
     padding: 20px 0px;
     gap: 20px;
   }

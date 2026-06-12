@@ -40,7 +40,7 @@ const skills = [
 const AboutPage = () => {
   return (
     <div className='btneeee'>
-      <div style={{ width: '100%', height: '100vh', position: 'absolute', overflow: 'hidden', top: '0px', left: '0px', zIndex: 0 }}>
+      <div style={{ width: '100%', height: '100%', position: 'absolute', overflow: 'hidden', top: '0px', left: '0px', zIndex: 0 }}>
 
         <Lightfall
           colors={['#000000', '#0c0631', '#3a1539']}
