@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 200;
+    padding: 28px 0px;
+}
+
+.logo h1 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 26px;
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.logo h1 span {
+    color: #A6C8FF;
+}
+
+/* ── Desktop Nav ── */
+.desktop-nav {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+}
+
+.desktop-nav a {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    position: relative;
+    transition: color 0.25s;
+    cursor: pointer;
+}
+
+.desktop-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background: #A6C8FF;
+    transition: width 0.3s ease;
+}
+
+.desktop-nav a:hover {
+    color: #fff;
+}
+
+.desktop-nav a:hover::after {
+    width: 100%;
+}
+
+/* ── Right Side ── */
+.right-side {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* ── Hire Me Button ── */
+.btn button {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #0A29FF;
+    background: #A6C8FF;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 26px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+}
+
+.btn button:hover {
+    background: #fff;
+    transform: scale(1.04);
+}
+
+/* ── Hamburger ── */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 300;
+}
+
+.hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── Mobile Menu ── */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(2, 5, 26, 0.97);
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.mobile-menu.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.mobile-menu a {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+
+.mobile-menu a:hover {
+    color: #A6C8FF;
+}
+
+/* ── Media Queries ── */
+@media (max-width: 1024px) {
+    .container {
+        padding: 24px 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 1.5rem;
+    }
+
+    .logo h1 {
+        font-size: 22px;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 16px 1rem;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    .btn button {
+        font-size: 12px;
+        padding: 8px 18px;
+    }
+}

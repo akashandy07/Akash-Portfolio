@@ -1,0 +1,271 @@
+/* ── Base ── */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+.project-container {
+    width: 100%;
+    min-height: 180vh;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 65px;
+    overflow: hidden;
+    font-family: 'Space Grotesk', sans-serif;
+    scroll-behavior: smooth;
+    z-index: 10;
+}
+
+/* ── Background pin ── */
+.project-bg {
+    width: 100%;
+    height: 100%;
+    min-height: 150vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 0;
+}
+
+/* ── Overlay layer ── */
+.project-info {
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    color: #f0f4ff;
+    z-index: 10;
+    
+}
+
+/* ── Section heading ── */
+.project-info>h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #7aaaff;
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+.project-section-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #e8f0ff;
+    text-align: left;
+    margin: 0 0 36px 0;
+    line-height: 1.2;
+}
+
+/* ── Grid ── */
+.project-main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+/* ── Diagonal stagger ── */
+.project-one>div {
+    margin-left: 0%;
+    width: 40%;
+}
+
+.project-two>div {
+    margin-left: 37%;
+    width: 40%;
+}
+
+.project-three>div {
+    margin-left: 60%;
+    width: 40%;
+}
+
+/* ── Card shared style ── */
+.project-one>div,
+.project-two>div,
+.project-three>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 28px 32px;
+    border-left: 4px solid #3a6ff7;
+    background: rgba(12, 1, 22, 0.55);
+    backdrop-filter: blur(10px);
+    border-radius: 0 12px 12px 0;
+    transition: border-color 0.25s, background 0.25s;
+}
+
+.project-one>div:hover,
+.project-two>div:hover,
+.project-three>div:hover {
+    border-color: #7aaaff;
+    background: rgba(10, 20, 80, 0.7);
+}
+
+/* ── Card typography ── */
+.project-emoji {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.project-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #e8f0ff;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.project-desc {
+    font-size: 0.9rem;
+    color: #a0b8e8;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.project-stack {
+    font-size: 0.78rem;
+    color: #5a8fff;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* ── Live demo link ── */
+.project-link {
+    display: inline-block;
+    margin-top: 4px;
+    padding: 7px 20px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #e8f0ff;
+    border: 1px solid #3a6ff7;
+    border-radius: 6px;
+    text-decoration: none;
+    letter-spacing: 0.06em;
+    transition: background 0.2s, color 0.2s;
+}
+
+.project-link:hover {
+    background: #3a6ff7;
+    color: #fff;
+}
+
+/* ── Tablet (1024px and below) ── */
+@media (max-width: 1024px) {
+    .project-info {
+        padding: 0 1rem;
+    }
+
+    .project-section-title {
+        font-size: 2rem;
+    }
+
+    .project-one>div {
+        width: 55%;
+        margin-left: 0%;
+    }
+
+    .project-two>div {
+        width: 55%;
+        margin-left: 25%;
+    }
+
+    .project-three>div {
+        width: 55%;
+        margin-left: 45%;
+    }
+}
+
+/* ── Small Tablet (768px and below) ── */
+@media (max-width: 768px) {
+    .project-container {
+        min-height: auto;
+        padding-top: 50px;
+    }
+
+    .project-bg {
+        min-height: 100%;
+    }
+
+    .project-info {
+        padding: 0 1.5rem;
+    }
+
+    .project-section-title {
+        font-size: 1.6rem;
+        margin-bottom: 24px;
+    }
+
+    /* remove diagonal stagger — stack straight */
+    .project-one>div,
+    .project-two>div,
+    .project-three>div {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .project-title {
+        font-size: 1.2rem;
+    }
+
+    .project-desc {
+        font-size: 0.85rem;
+    }
+}
+
+/* ── Mobile (480px and below) ── */
+@media (max-width: 480px) {
+    .project-container {
+        padding-top: 40px;
+    }
+
+    .project-info {
+        padding: 0 1rem;
+    }
+
+    .project-info>h2 {
+        font-size: 0.85rem;
+    }
+
+    .project-section-title {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+
+    .project-one>div,
+    .project-two>div,
+    .project-three>div {
+        width: 100%;
+        margin-left: 0%;
+        padding: 20px 20px;
+        gap: 8px;
+    }
+
+    .project-emoji {
+        font-size: 1.6rem;
+    }
+
+    .project-title {
+        font-size: 1.1rem;
+    }
+
+    .project-desc {
+        font-size: 0.82rem;
+    }
+
+    .project-stack {
+        font-size: 0.72rem;
+    }
+
+    .project-link {
+        font-size: 0.78rem;
+        padding: 6px 16px;
+    }
+}

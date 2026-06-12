@@ -1,0 +1,169 @@
+/* ContactPage.css */
+
+.contact-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info {
+    position: relative;
+    margin-top: 1%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(166, 200, 255, 0.2);
+    border-radius: 20px;
+    padding: 40px 40px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-info h1 {
+    color: #A6C8FF;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.contact-info form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-info label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: #A6C8FF;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.contact-info input,
+.contact-info select {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(166, 200, 255, 0.3);
+    border-radius: 10px;
+    padding: 12px 16px;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.contact-info input::placeholder {
+    color: rgba(166, 200, 255, 0.4);
+}
+
+.contact-info input:focus,
+.contact-info select:focus {
+    border: 1px solid #A6C8FF;
+}
+
+.contact-info select option {
+    background: #0A29FF;
+    color: #ffffff;
+}
+
+.contact-info button {
+    margin-top: 10px;
+    padding: 14px;
+    background: linear-gradient(135deg, #5227FF, #FF9FFC);
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: opacity 0.3s;
+}
+
+.contact-info button:hover {
+    opacity: 0.85;
+}
+
+/* ── Tablet (1024px and below) ── */
+@media (max-width: 1024px) {
+    .contact-info {
+        width: 480px;
+        padding: 36px 36px;
+    }
+
+    .contact-info h1 {
+        font-size: 24px;
+    }
+}
+
+/* ── Small Tablet (768px and below) ── */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 40px 1.5rem;
+        align-items: flex-start;
+    }
+
+    .contact-info {
+        width: 100%;
+        padding: 32px 28px;
+        border-radius: 16px;
+    }
+
+    .contact-info h1 {
+        font-size: 22px;
+    }
+
+    .contact-info input,
+    .contact-info select {
+        font-size: 13px;
+        padding: 11px 14px;
+    }
+
+    .contact-info button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+/* ── Mobile (480px and below) ── */
+@media (max-width: 480px) {
+    .contact-container {
+        padding: 30px 1rem;
+    }
+
+    .contact-info {
+        width: 100%;
+        padding: 24px 20px;
+        gap: 14px;
+        border-radius: 14px;
+    }
+
+    .contact-info h1 {
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+
+    .contact-info label {
+        font-size: 11px;
+    }
+
+    .contact-info input,
+    .contact-info select {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+
+    .contact-info button {
+        font-size: 13px;
+        padding: 12px;
+        letter-spacing: 0.5px;
+    }
+}

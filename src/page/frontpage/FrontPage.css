@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap');
+
+.frontpage {
+  position: relative;
+  margin: 0px auto;
+  width: 100%;
+  z-index: 100;
+  padding: 27vh 6% 10vh;
+  scroll-behavior: smooth;
+}
+
+.frontpage-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1300px;
+}
+
+.frontpage-content span {
+  font-family: 'Syne', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: #A6C8FF;
+  letter-spacing: 1px;
+}
+
+.frontpage-content h1 {
+  font-family: 'DM Sans', sans-serif;
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.8;
+}
+
+.frontpage-content .buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.frontpage-content button {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  padding: 10px 26px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  border: none;
+}
+
+.frontpage-content button:first-child {
+  background: #A6C8FF;
+  color: #0A29FF;
+}
+
+.frontpage-content button:first-child:hover {
+  background: #fff;
+  transform: scale(1.04);
+}
+
+.frontpage-content button:last-child {
+  background: transparent;
+  color: #fff;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+}
+
+.frontpage-content button:last-child:hover {
+  border-color: #fff;
+  transform: scale(1.04);
+}
+
+/* ── Tablet (1024px and below) ── */
+@media (max-width: 1024px) {
+  .frontpage {
+    padding: 24vh 5% 10vh;
+  }
+
+  .frontpage-content span {
+    font-size: 28px;
+  }
+
+  .frontpage-content h1 {
+    font-size: 15px;
+  }
+}
+
+/* ── Small Tablet (768px and below) ── */
+@media (max-width: 768px) {
+  .frontpage {
+    padding: 20vh 4% 8vh;
+  }
+
+  .frontpage-content span {
+    font-size: 24px;
+  }
+
+  .frontpage-content h1 {
+    font-size: 14px;
+    padding-top: 14px;
+  }
+
+  .frontpage-content .buttons {
+    flex-direction: column;
+    gap: 12px;
+    width: fit-content;
+  }
+
+  .frontpage-content button {
+    font-size: 12px;
+    padding: 10px 24px;
+  }
+}
+
+/* ── Mobile (480px and below) ── */
+@media (max-width: 480px) {
+  .frontpage {
+    padding: 18vh 1.5rem 8vh;
+  }
+
+  .frontpage-content {
+    gap: 14px;
+  }
+
+  .frontpage-content span {
+    font-size: 20px;
+  }
+
+  .frontpage-content h1 {
+    font-size: 13px;
+    padding-top: 10px;
+    line-height: 1.7;
+  }
+
+  .frontpage-content h1 br {
+    display: none;       /* remove manual line breaks on mobile */
+  }
+
+  .frontpage-content .buttons {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .frontpage-content button {
+    font-size: 12px;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+  }
+}
